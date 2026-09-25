@@ -572,7 +572,8 @@ select {
   text-align: center;
 }
 
-.service__desc {
+.service__desc,
+.staff__desc {
   margin-bottom: 15px;
   font-family: Sora;
   font-size: 1rem;
@@ -665,4 +666,87 @@ select {
 .service__cta {
   margin-top: 45px;
   min-width: 214px;
+}
+
+/* Staff */
+.staff {
+  padding: 135px 0;
+}
+
+.staff .container {
+  text-align: center;
+}
+
+.staff__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 45px;
+  column-gap: 35px;
+}
+
+.staff-item__img-wrap {
+  position: relative;
+  margin-inline: 16px;
+  border-radius: 130px;
+}
+
+.staff-item__img-wrap::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: calc(100% + 36px);
+  height: 100%;
+  background: var(--curve-color);
+  transform: translateX(-50%);
+  pointer-events: none;
+
+  mask: url(../img/staff-curve.svg) bottom / 100% auto no-repeat;
+  -webkit-mask: url(../img/staff-curve.svg) bottom / 100% auto no-repeat;
+}
+
+.staff-item:nth-child(even) .staff-item__img-wrap::before {
+  bottom: auto;
+  top: 10%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.staff-item__img-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 90%;
+  border-radius: inherit;
+  background: var(--bg);
+}
+
+.staff-item__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 25 / 30;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.staff-item__tile {
+  margin-top: 34px;
+  color: #656689;
+  font-size: 0.875rem;
+}
+
+.staff-item__name {
+  margin-top: 14px;
+  color: #000958;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+.staff__cta {
+  min-width: 193px;
+  margin-top: 48px;
 }
