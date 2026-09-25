@@ -5,6 +5,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fffaf5;
+  height: 7000px;
 }
 
 h1,
@@ -73,6 +74,13 @@ select {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.section__heading {
+  color: #000958;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .section__desc {
@@ -272,4 +280,131 @@ select {
   line-height: 1;
   text-decoration: underline;
   color: #000958;
+}
+
+/* About */
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 65px;
+  padding-top: 65px;
+}
+
+.about__label {
+  font-family: Sora;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5e6085;
+}
+
+.about__heading {
+  margin-top: 15px;
+}
+
+.about__heading,
+.about__desc {
+  max-width: 431px;
+}
+
+.about__check-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  gap: 34px 36px;
+  margin-top: 57px;
+}
+
+.about__check-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+
+.about__check-item::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #ff5d31;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px -3px rgba(255, 93, 49, 0.69);
+}
+
+.about__check-item::after {
+  content: url(../icons/check.svg);
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about__media {
+  position: relative;
+}
+
+.about__card {
+  position: absolute;
+  left: 0;
+  bottom: 238px;
+  width: 136px;
+  padding: 30px 26px;
+  border-radius: 10px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+  text-align: center;
+}
+
+.about__card-number {
+  font-family: Sora;
+  font-size: 2.625rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about__card-desc {
+  margin-top: 14px;
+  font-size: 0.875rem;
+  line-height: 1.43rem;
+  color: #c6f4f9;
+}
+
+.about__card-decor {
+  position: absolute;
+  top: -38px;
+  right: -30px;
+}
+
+.about__img-wrap {
+  position: relative;
+  width: 494px;
+  height: 560px;
+  margin-left: auto;
+}
+
+.about__img-wrap::before {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: -1;
+  height: 336px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+  box-shadow: 11px 18px 65px 0 rgba(255, 155, 121, 0.12);
+}
+
+.about__img {
+  display: block;
+  width: 450px;
+  max-height: 100%;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+.about__media-decor {
+  position: absolute;
+  right: -52px;
+  bottom: 307px;
+  z-index: -1;
 }
