@@ -5,7 +5,6 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fffaf5;
-  height: 7000px;
 }
 
 h1,
@@ -1089,4 +1088,119 @@ select {
   font-size: 0.875rem;
   line-height: 1.72;
   color: #656689;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right, #fff6ed 42%, transparent 42%);
+}
+
+.footer__top {
+  display: flex;
+}
+
+.footer__left {
+  width: 41%;
+  padding: 114px 0 0;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px 68px;
+  height: 46px;
+  max-width: 269px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 91, 46, 0.25);
+  background: #fff;
+}
+
+.subscribe-form__input {
+  width: 100%;
+  height: 100%;
+  padding: 0px 22px;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.17;
+  color: #000958;
+}
+
+.subscribe-form__input::placeholder {
+  color: #656689;
+}
+
+.subscribe-form__btn {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin-right: -1px;
+  background: #ff5b2e;
+  border-radius: 50%;
+  box-shadow: 0 15px 28px -7px rgba(255, 91, 46, 0.3);
+}
+
+.subscribe-form__btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.footer__heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.12;
+  color: #000958;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  box-shadow: 0 15px 28px -7px #ccc;
+  opacity: 0.9;
+}
+
+.footer__right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 58px 137px;
+  padding: 52px 0 0 129px;
+}
+
+.footer__list {
+  margin-top: 14px;
+}
+
+.footer__link {
+  font-size: 0.875rem;
+  line-height: 2;
+  color: #656689;
+}
+
+.footer__copyright {
+  padding: 52px 0px 48px;
+  font-size: 0.75rem;
+  line-height: 1.17;
+  color: #656689;
+  text-align: center;
 }
